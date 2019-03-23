@@ -1,0 +1,23 @@
+{
+  "name": "niclaslovdahl.github.io",
+  "private": true,
+  "description": "Personal website",
+  "author": "Niclas Lövdahl <niclas.lovdahl@gmail.com>",
+  "license": "MIT",
+  "version": "0.1.0",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write src/**/*.{js,jsx}",
+    "start": "npm run develop",
+    "serve": "gatsby serve"
+  },
+  "dependencies": {
+    "gatsby": "^2.2.5",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4"
+  },
+  "devDependencies": {
+    "prettier": "^1.16.4"
+  }
+}
