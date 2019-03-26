@@ -2,10 +2,11 @@ import React from "react";
 import styled, { createGlobalStyle } from "styled-components";
 
 import Header from "./Header";
+import Footer from "./Footer";
 
 const GlobalStyle = createGlobalStyle`
   * {
-    box-sizing: border-box;
+     overflow: hidden;
   }
 
   body {
@@ -16,20 +17,17 @@ const GlobalStyle = createGlobalStyle`
 
 const Wrapper = styled.div`
   width: 85%;
-  max-width: 850px;
+  max-width: 960px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  overflow: auto;
 `;
 
 const Main = styled.div`
   margin: auto 0;
   display: flex;
-  color: black;
-  align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 `;
 
 export default ({ children }) => {
@@ -38,6 +36,7 @@ export default ({ children }) => {
       <GlobalStyle />
       <Header />
       <Main>{children}</Main>
+      <Footer />
     </Wrapper>
   );
 };
