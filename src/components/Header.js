@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const StyledHeader = styled.header`
+  color: black;
   padding-top: 1em;
 `;
 

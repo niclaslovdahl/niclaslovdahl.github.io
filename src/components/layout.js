@@ -7,17 +7,23 @@ import Footer from "./Footer";
 const GlobalStyle = createGlobalStyle`
   * {
      overflow: hidden;
+     ::selection {
+       background-color: #5F656D;
+       color: white;
+     }
   }
 
   body {
     margin: 0;
     font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    color: #666;
+    font-size: 14px;
   }
 `;
 
 const Wrapper = styled.div`
   width: 85%;
-  max-width: 960px;
+  max-width: 860px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
