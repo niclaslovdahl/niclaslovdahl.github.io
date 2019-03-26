@@ -8,7 +8,6 @@ const GlobalStyle = createGlobalStyle`
   * {
      overflow: hidden;
      ::selection {
-       background-color: #5F656D;
        color: white;
      }
   }
@@ -17,6 +16,7 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
     color: #666;
+    font-weight: 300;
     font-size: 14px;
   }
 `;

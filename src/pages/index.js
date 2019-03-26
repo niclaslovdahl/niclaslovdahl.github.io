@@ -35,6 +35,10 @@ const Image = styled.div`
 
 const Text = styled.div`
   padding-left: 2em;
+
+  @media screen and (max-width: 768px) {
+    padding: 1em 0 0 0;
+  }
 `;
 
 export default () => {
@@ -46,12 +50,23 @@ export default () => {
           <p>Hello, I'm Niclas.</p>
           <p>
             Currently, I'm a senior M.Sc student at{" "}
-            <Link href="https://www.lth.se/english/">
+            <Link
+              href="https://www.lth.se/english/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Faculty of Engineering LTH
             </Link>{" "}
             working part time as Test Engineer at{" "}
-            <Link href="https://www.axis.com">Axis Communcations</Link>. I'm
-            looking for a place to do my master thesis and also full-time work.
+            <Link
+              href="https://www.axis.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Axis Communcations
+            </Link>
+            . I'm looking for a place to do my master thesis and also full-time
+            work.
           </p>
           <p>
             Please send me an{" "}
