@@ -1,5 +1,5 @@
 let stars = [];
-nbrStars = 400;
+nbrStars = 150;
 let canvas;
 let init = true;
 let timeout;
@@ -75,7 +75,7 @@ class Star {
     let sx = map(this.x / this.z, 0, 1, 0, width);
     let sy = map(this.y / this.z, 0, 1, 0, height);
 
-    let r = map(this.z, 0, width, 18, 0);
+    let r = map(this.z, 0, width, 20, 0);
 
     if (this.colorAlpha < 1) {
       this.colorAlpha += 0.01;
