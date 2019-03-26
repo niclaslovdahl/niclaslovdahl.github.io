@@ -8,6 +8,7 @@ const GlobalStyle = createGlobalStyle`
   * {
      overflow: hidden;
      ::selection {
+       background-color: #666;
        color: white;
      }
   }
