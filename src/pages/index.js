@@ -65,8 +65,15 @@ export default () => {
             >
               Axis Communcations
             </Link>
-            . I'm looking for a place to do my master thesis and also full-time
-            work.
+            . I'm doing my master thesis project later this year at{" "}
+            <Link
+              href="https://www.jayway.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Jayway
+            </Link>{" "}
+            Malmö.
           </p>
           <p>
             Please send me an{" "}
