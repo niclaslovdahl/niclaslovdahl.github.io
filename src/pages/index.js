@@ -49,7 +49,7 @@ export default () => {
         <Text>
           <p>Hello, I'm Niclas.</p>
           <p>
-            Currently, I'm a senior M.Sc student at{" "}
+            Currently, I'm a M.Sc student at{" "}
             <Link
               href="https://www.lth.se/english/"
               target="_blank"
@@ -57,15 +57,7 @@ export default () => {
             >
               Faculty of Engineering LTH
             </Link>{" "}
-            working part time as Test Engineer at{" "}
-            <Link
-              href="https://www.axis.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Axis Communcations
-            </Link>
-            . I'm doing my master thesis project later this year at{" "}
+            doing my master thesis at{" "}
             <Link
               href="https://www.jayway.com/"
               target="_blank"
