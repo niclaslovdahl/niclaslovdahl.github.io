@@ -49,7 +49,7 @@ export default () => {
         <Text>
           <p>Hello, I'm Niclas.</p>
           <p>
-            Currently, I'm a working as a Developer at{" "}
+            Currently, I'm working as a Developer at{" "}
             <Link
               href="https://www.jayway.com/"
               target="_blank"
