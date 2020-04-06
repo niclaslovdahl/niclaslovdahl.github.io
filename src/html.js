@@ -13,7 +13,6 @@ export default function HTML(props) {
         />
         <title>Niclas Lövdahl</title>
         <script src="/js/p5.min.js" />
-        {/* <script src="/js/p5.dom.min.js" /> */}
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>
