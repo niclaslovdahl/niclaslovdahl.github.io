@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import styled, { createGlobalStyle } from "styled-components";
 
 import Header from "./Header";
@@ -37,7 +37,11 @@ const Main = styled.div`
   justify-content: center;
 `;
 
-export default ({ children }) => {
+type LayoutProps = {
+  children: ReactNode;
+};
+
+export default ({ children }: LayoutProps) => {
   return (
     <Wrapper>
       <GlobalStyle />
