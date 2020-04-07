@@ -1,9 +1,25 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-export default function HTML(props: any) {
+type HTMLProps = {
+  htmlAttributes: object;
+  headComponents: Array<any>;
+  bodyAttributes: object;
+  preBodyComponents: Array<any>;
+  body: string;
+  postBodyComponents: Array<any>;
+};
+
+export default function HTML({
+  htmlAttributes,
+  headComponents,
+  bodyAttributes,
+  preBodyComponents,
+  body,
+  postBodyComponents,
+}: HTMLProps) {
   return (
-    <html {...props.htmlAttributes}>
+    <html {...htmlAttributes} lang="en">
       <head>
         <meta charSet="utf-8" />
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
@@ -11,12 +27,16 @@ export default function HTML(props: any) {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1, user-scalable=no"
         />
+        <meta
+          name="Description"
+          content="Personal website of Niclas Lövdahl."
+        ></meta>
         <title>Niclas Lövdahl</title>
-        <script src="/js/p5.min.js" />
-        {props.headComponents}
+        <script defer src="/js/p5.min.js" />
+        {headComponents}
       </head>
-      <body {...props.bodyAttributes}>
-        {props.preBodyComponents}
+      <body {...bodyAttributes}>
+        {preBodyComponents}
         <noscript key="noscript" id="gatsby-noscript">
           This app works best with JavaScript enabled.
         </noscript>
@@ -24,19 +44,10 @@ export default function HTML(props: any) {
         <div
           key={`body`}
           id="___gatsby"
-          dangerouslySetInnerHTML={{ __html: props.body }}
+          dangerouslySetInnerHTML={{ __html: body }}
         />
-        {props.postBodyComponents}
+        {postBodyComponents}
       </body>
     </html>
   );
 }
-
-HTML.propTypes = {
-  htmlAttributes: PropTypes.object,
-  headComponents: PropTypes.array,
-  bodyAttributes: PropTypes.object,
-  preBodyComponents: PropTypes.array,
-  body: PropTypes.string,
-  postBodyComponents: PropTypes.array,
-};
