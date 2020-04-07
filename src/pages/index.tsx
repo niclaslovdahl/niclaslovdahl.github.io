@@ -25,7 +25,7 @@ const Link = styled.a`
 const Image = styled.div`
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url(https://avatars1.githubusercontent.com/u/7569192?s=400&u=32015ec1bdeb87f708aeb4b9b2b7ff90b02c404b&v=4);
+  background-image: url(me.jpeg);
   background-size: cover;
   width: 150px;
   height: 150px;
